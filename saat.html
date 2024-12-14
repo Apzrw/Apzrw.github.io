@@ -11,11 +11,11 @@
     <body>
          <p id="saat" ></p>
          <script>
-            setİnterval(()=>{
+            setInterval(()=>{
               const suan= new Date();
               const saat=suan.getHours();
-              const dakika=suan.getMinutes;
-              const saniye= suan.getSeconds;
+              const dakika=suan.getMinutes();
+              const saniye= suan.getSeconds();
               const yazi=saat+":"+dakika+":"+saniye;
               document.getElementById("saat").innerHTML=yazi;
             },1000);

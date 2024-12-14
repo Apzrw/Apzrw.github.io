@@ -1,11 +1,11 @@
 body{ 
-    background:purple;
+    background:rgb(230, 150, 230);
 }
 div{
-    background: blue;
+    background: rgb(249, 200, 208);
 }
 div a{
     color: black;
-    padding: 10p;
-    font-size: 24px;
+    padding: 5p;
+    font-size: 15px;
 }

@@ -12,7 +12,7 @@
             const sayi=1+Math.floor(Math.random()*100);
             let kalan=5;
             document.getElementById("doğrula").addEventListener("click", () => {
-                const tahmin= getElementById("tahmin").value;
+                const tahmin= document.getElementById("tahmin").value;
 
             
                 kalan=kalan-1;
@@ -24,14 +24,14 @@
                   
                 }
                 if(sayi==tahmin) {
-                  document.getElement("sonuc").innetHTML="Tebrikler,doğru tamin ettiniz";
+                  document.getElementById("sonuc").innerHTML="Tebrikler,doğru tamin ettiniz";
                     
                 }
                 if(sayi<tahmin) {
-                    document.getElement("sonuc").innetHTML="Daha küçük bir sayı giriniz.";
+                    document.getElementById("sonuc").innerHTML="Daha küçük bir sayı giriniz.";
                 }
                 if(sayi> tahmin){
-                    document.getElement("sonuc").innetHTML="Daha büyük bir sayı giriniz";
+                    document.getElementById("sonuc").innerHTML="Daha büyük bir sayı giriniz";
                 }
 
             });

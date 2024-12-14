@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Sayı Tahmin Et</title>
+    </head>   
+    <body>
+        <h1>Sigara içebilir miyim?</h1>
+        <input type="text" id="tahmin">
+        <button id="doğrula"> Bas Lan Göt</button>
+        <p> Al la: <span id="kalan"></span></p>
+        <p id="sonuc"></p>
+
+        <script>
+       
+            let kalan=5;
+            document.getElementById("doğrula").addEventListener("click", () => {
+                const tahmin= document.getElementById("tahmin").value;
+
+            
+                kalan="çeeeeeekkk aq iç hayatını sikeyim senin";
+                document.getElementById("kalan").innerHTML=kalan;
+
+
+            });
+           
+        </script>
+    </body>
+</html>

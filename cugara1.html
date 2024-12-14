@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Bugün Nejat Jobsum</title>
+    </head>   
+    <body>
+        <input type="text" id="tahmin">
+        <button id="doğrula"> Bas lan göt</button>
+        <p> Al lan göt:<span id="kalan">5</span></p>
+        <p id="sonuc"></p>
+
+        <script>
+            const sayi=31
+            let kalan=5;
+            document.getElementById("doğrula").addEventListener("click", () => {
+                const tahmin= document.getElementById("tahmin").value;
+
+            
+                kalan=kalan-1;
+                document.getElementById("kalan").innerHTML=kalan;
+
+            
+                if(sayi==tahmin) {
+                  document.getElementById("sonuc").innerHTML="Çekkkkkkkk aq iç hayatını sikeyim senin";
+                    
+                }
+              
+
+            });
+           
+        </script>
+    </body>
+</html>
