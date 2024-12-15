@@ -28,41 +28,46 @@
         /* Kalpler */
         .heart {
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             background-color: #ff6f91;
             transform: rotate(45deg);
-            animation: float 3s ease-in-out infinite;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            animation: float 5s ease-in-out infinite;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            opacity: 0.8;
         }
 
         .heart:before,
         .heart:after {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             background-color: #ff6f91;
             border-radius: 50%;
         }
 
         .heart:before {
-            top: -10px;
+            top: -15px;
             left: 0;
         }
 
         .heart:after {
             top: 0;
-            left: -10px;
+            left: -15px;
         }
 
         @keyframes float {
             0% {
-                transform: translateY(0) rotate(45deg);
+                transform: translate(0, 0) rotate(45deg);
                 opacity: 1;
             }
+            50% {
+                transform: translate(50px, -200px) rotate(90deg);
+                opacity: 0.7;
+            }
             100% {
-                transform: translateY(-600px) rotate(45deg);
+                transform: translate(-50px, -400px) rotate(135deg);
                 opacity: 0;
             }
         }
@@ -109,14 +114,14 @@
         }
 
         /* Kalplerin Rastgele Dağılımı */
-        .heart:nth-child(1) { left: 10%; animation-duration: 4s; animation-delay: 0s; }
-        .heart:nth-child(2) { left: 25%; animation-duration: 3s; animation-delay: 1s; }
-        .heart:nth-child(3) { left: 40%; animation-duration: 5s; animation-delay: 2s; }
-        .heart:nth-child(4) { left: 55%; animation-duration: 3.5s; animation-delay: 3s; }
-        .heart:nth-child(5) { left: 70%; animation-duration: 6s; animation-delay: 4s; }
-        .heart:nth-child(6) { left: 85%; animation-duration: 4.5s; animation-delay: 2.5s; }
-        .heart:nth-child(7) { left: 15%; animation-duration: 4.2s; animation-delay: 1.2s; }
-        .heart:nth-child(8) { left: 45%; animation-duration: 3.8s; animation-delay: 3.8s; }
+        .heart:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 25%; animation-duration: 4s; animation-delay: 1s; }
+        .heart:nth-child(3) { left: 40%; animation-duration: 6s; animation-delay: 2s; }
+        .heart:nth-child(4) { left: 55%; animation-duration: 4.5s; animation-delay: 3s; }
+        .heart:nth-child(5) { left: 70%; animation-duration: 6.5s; animation-delay: 4s; }
+        .heart:nth-child(6) { left: 85%; animation-duration: 5s; animation-delay: 2.5s; }
+        .heart:nth-child(7) { left: 15%; animation-duration: 5.5s; animation-delay: 1.2s; }
+        .heart:nth-child(8) { left: 45%; animation-duration: 4.8s; animation-delay: 3.8s; }
     </style>
 </head>
 <body>
@@ -136,10 +141,10 @@
     <!-- Resim Galerisi -->
     <div class="image-container">
         <div class="slider">
-            <img src="https://via.placeholder.com/300x400?text=Aşk+1" alt="Aşk Görsel 1">
-            <img src="https://via.placeholder.com/300x400?text=Aşk+2" alt="Aşk Görsel 2">
-            <img src="https://via.placeholder.com/300x400?text=Aşk+3" alt="Aşk Görsel 3">
-            <img src="https://via.placeholder.com/300x400?text=Aşk+4" alt="Aşk Görsel 4">
+            <img src="file:///C:/Users/Azra%20Hancı/Pictures/Camera%20Roll/WIN_20241122_14_40_56_Pro.jpg" alt="">
+            <img src="file:///C:/Users/Azra%20Hancı/Pictures/Camera%20Roll/WIN_20241122_14_41_02_Pro.jpg" alt="">
+            <img src="file:///C:/Users/Azra%20Hancı/Pictures/Camera%20Roll/WIN_20241122_14_41_03_Pro.jpg"alt="">
+            <img src="file:///C:/Users/Azra%20Hancı/Pictures/Camera%20Roll/WIN_20241122_14_41_14_Pro.jpg" alt="">
         </div>
     </div>
 
@@ -147,14 +152,13 @@
     <div class="date-message">Bu tarih, bizim hikayemizin başlangıcı. Hep hatırlanacak bir gün. ❤️</div>
 
     <script>
-        // Kalpleri hareket ettirmek için script
+        // Kalpleri rastgele hareket ettirmek için script
         const hearts = document.querySelectorAll('.heart');
         hearts.forEach((heart) => {
             heart.style.left = Math.random() * window.innerWidth + 'px';
-            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            heart.style.animationDuration = Math.random() * 3 + 4 + 's';
             heart.style.animationDelay = Math.random() * 2 + 's';
         });
     </script>
 </body>
 </html>
-
