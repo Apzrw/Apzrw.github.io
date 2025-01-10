@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eğitim Ortamı| Ankara Bilim Üniversitesi</title>
+    <title>Eğitim Ortamı | Ankara Bilim Üniversitesi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Genel Stil */
@@ -50,14 +50,16 @@
         .navbar .nav-link:hover {
             color: #b68653; /* Altın tonu */
         }
+
         .page-title {
             font-size: 2.5rem;
-            background:rgba(0, 31, 63, 0.9); 
+            background: rgba(0, 31, 63, 0.9); 
             color: white;
             padding: 10px;
             text-align: center;
             margin-bottom: 10px;
         }
+
         /* Hero Bölümü */
         .hero {
             background-image: url('https://source.unsplash.com/1920x1080/?classic,vintage');
@@ -125,6 +127,22 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Görsellerin düzenlenmesi için eklenen stil */
+        .small-image-container {
+            display: flex;
+            flex-wrap: wrap; /* Görseller sığmazsa bir alt satıra geçsin */
+            justify-content: center; /* Görselleri ortalar */
+            gap: 10px; /* Görseller arası boşluk */
+            margin: 20px 0;
+        }
+
+        .small-image {
+            width: 300px;
+            height: auto;
+            border: 1px solid #ccc; /* Görseller için ince bir çerçeve */
+            border-radius: 5px; /* Köşeleri yumuşatır */
+        }
     </style>
 </head>
 <body>
@@ -145,7 +163,7 @@
                           Üniversite
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="üniversiteyönetimi.html">Üniversite Yönetimi</a></li>
+                          <li><a class="dropdown-item" href="universiteyonetimi.html">Üniversite Yönetimi</a></li>
                           <li><a class="dropdown-item" href="hakkımızda1.html">Hakkımızda</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="vizyonmisyon.html">Vizyon/Misyon</a></li>
@@ -156,10 +174,10 @@
                       Akademik
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Meslek Yüksekokulu</a></li>
-                      <li><a class="dropdown-item" href="#">Hazırlık OKulu</a></li>
+                      <li><a class="dropdown-item" href="meslekyüksekokulu.html">Meslek Yüksekokulu</a></li>
+                      <li><a class="dropdown-item" href="hazırlıkokulu.html">Hazırlık OKulu</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="lisansütü.html">Lisansüstü</a></li>
+                      <li><a class="dropdown-item" href="lisansustu.html">Lisansüstü</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -167,10 +185,10 @@
                       Öğrenci
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="eğitimortamı.html">Eğitim Ortamı</a></li>
-                      <li><a class="dropdown-item" href="sporkulübü.html">Spor Kulübü</a></li>
+                      <li><a class="dropdown-item" href="egitimortami.html">Eğitim Ortamı</a></li>
+                      <li><a class="dropdown-item" href="sporkulubu.html">Spor Kulübü</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="ankarabilimdesosyalyaşam.html">Ankara Bilim'de Sosyal Yaşam</a></li>
+                      <li><a class="dropdown-item" href="ankarabilimdesosyalyasam.html">Ankara Bilim'de Sosyal Yaşam</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -180,7 +198,7 @@
                     <a class="nav-link" href="#">Medya</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="kütühane.html">Kütüphane</a>
+                    <a class="nav-link" href="kutuphane.html">Kütüphane</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="sıkçasorulansorular.html">Sıkça Sorulan Sorular</a>
@@ -196,53 +214,23 @@
       <p>EĞİTİM ORTAMI</p>
   </div>
 
-    
-        <p>İnsan, eşya ve değer üçlüsünün ortaklığıdır eğitim ortamının karşılığı Ankara Bilim Üniversitesi'nde; eşyanın, sadece, ihtiyacı tedarik etmesinin ötesine geçilerek; temasın bilgi, derinlik, heyecan ve estetikle bütünleştirildiği; farklı fiziksel ortam, bağlam ve kültürlerin birbiri içerisinde dokunduğu, aktif, üretken, yaratıcı bir karşılıktır Ankara Bilim için...</p>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <style>
-                  .small-image {
-                    width: 500px; 
-                    height: 200px; }
-            
-                </style>
-                <style>
-                  .small-image {
-                    width: 1200px; 
-                    height: 500px; 
-                    display: block;           
-                    margin: 0 auto;   
-                  }
+    <p>İnsan, eşya ve değer üçlüsünün ortaklığıdır eğitim ortamının karşılığı Ankara Bilim Üniversitesi'nde; eşyanın, sadece, ihtiyacı tedarik etmesinin ötesine geçilerek; temasın bilgi, derinlik, heyecan ve estetikle bütünleştirildiği; farklı fiziksel ortam, bağlam ve kültürlerin birbiri içerisinde dokunduğu, aktif, üretken, yaratıcı bir karşılıktır Ankara Bilim için...</p>
 
-            
-                </style>
-                <img class="small-image" src="https://ankarabilim.edu.tr/assets/drop/dropimg_8cac0def87f6bf06106dffb27fe3358056675d0fe555ef2542bd0f13bc1d705917b3f056.jpg" width="700" height="400"/>
-              </div>
-              <div class="carousel-item">
-                <img class="small-image" src="https://ankarabilim.edu.tr/assets/drop/dropimg_07788d811827a95f2c86239a764b94920379ec3faccad8485f136bd94b1486e1e367ac8c.JPG" width="700" height="400"/>
-              </div>
-              <div class="carousel-item">
-                <img class="small-image" src="https://ankarabilim.edu.tr/assets/drop/dropimg_95610e2c5c25765a89af7cd50506e9f9ddabd75193faffdd264f5e9695ee6f6eb5de362c.JPG" width="700" height="400"/>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-         
+    <!-- Görseller -->
+    <div class="small-image-container">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005208.png" alt="Görsel 1">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005223.png" alt="Görsel 2">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005244.png" alt="Görsel 3">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005255.png" alt="Görsel 4">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005316.png" alt="Görsel 5">
+        <img class="small-image" src="c:\Users\gulse\OneDrive\Resimler\Ekran Görüntüleri\Ekran görüntüsü 2024-12-27 005327.png" alt="Görsel 6">
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>© 2024 Ankara Bilim Üniversitesi. Tüm Hakları Saklıdır.</p>
         <p><a href="#">Gizlilik Politikası</a> | <a href="#">İletişim</a></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    
-    </body>
-    </html>
+</body>
+</html>
